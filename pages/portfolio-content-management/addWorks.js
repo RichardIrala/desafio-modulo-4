@@ -8,14 +8,12 @@ function addWorks() {
       return data.json();
     })
     .then((dataJson) => {
-      console.log(dataJson);
       const datosLength = dataJson.items.length;
       for (let x = 0; x < datosLength; x++) {
         if (dataJson.items[x].sys.contentType.sys.id == "work") {
           const workData = dataJson.items[x].fields;
 
           const ClonedtemplateEl = templateEl.content.cloneNode("true");
-          console.log(ClonedtemplateEl);
           const childsTemplate = ClonedtemplateEl.querySelectorAll([
             "img",
             "h2",

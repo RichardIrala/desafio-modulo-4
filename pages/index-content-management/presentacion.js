@@ -10,8 +10,6 @@ function presentacion() {
       return data.json();
     })
     .then((p) => {
-      console.log(p);
-      console.log(p.fields);
       const titulo = p.fields.titleContent;
       const sobreMi = p.fields.paragraphContent;
       const imagen = p.fields.image;

@@ -10,7 +10,6 @@ function bienvenida() {
       return data.json();
     })
     .then((p) => {
-      console.log(p.fields);
       const titulo = p.fields.titleContent;
       const subtitulo = p.fields.subtitleContent;
       bienvenidaEl.classList.add("principal-content__titles");
