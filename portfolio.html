@@ -1,0 +1,56 @@
+<!-- soy la página porfolio -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+    <link rel="stylesheet" href="./components/header.css" />
+    <link rel="stylesheet" href="./components/footer.css" />
+    <link rel="stylesheet" href="./pages/porfolio.css" />
+    <script defer src="./components/header.js"></script>
+    <script
+      defer
+      src="./pages/portfolio-content-management/addWorks.js"
+    ></script>
+    <script defer src="./components/footer.js"></script>
+    <script defer src="./pages/porfolio.js"></script>
+  </head>
+  <body>
+    <div class="principal-content">
+      <!-- header -->
+      <div class="header-container"></div>
+      <div class="principal-content__title-container">
+        <h1 class="principal-content__title">Porfolio</h1>
+      </div>
+    </div>
+    <div class="all-content-cms-container">
+      <div class="all-content-cms"></div>
+    </div>
+    <template class="template--work">
+      <div class="work-container">
+        <img
+          class="work-container__img"
+          src="./imgs/portfolio-general-img.png"
+        />
+        <h2 class="work-container__title"></h2>
+        <p class="work-container__description"></p>
+        <a
+          class="work-container__url"
+          href="https://apx.school/carreras/dwf"
+          target="blank"
+          >APX school</a
+        >
+      </div>
+    </template>
+    <div class="footer-container"></div>
+  </body>
+</html>

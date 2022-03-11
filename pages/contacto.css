@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.principal-content {
+  background: linear-gradient(
+    107.17deg,
+    #0b6886 29.35%,
+    rgba(0, 255, 166, 0.8) 78.73%
+  );
+
+  min-height: 100vh;
+}
+@media (min-width: 960px) {
+  .principal-content {
+    min-height: 70vh;
+  }
+}
+.form {
+  background: none;
+}

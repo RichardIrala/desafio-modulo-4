@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.principal-content::before {
+  content: "";
+  background: url("../imgs/fondo-bummy.png");
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.principal-content {
+  height: 100vh;
+  color: rgb(254, 255, 255);
+}
+.principal-content__titles-container {
+  height: calc(100% - 100px);
+}
+.principal-content__titles {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.title {
+  font-size: 10rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.title:hover {
+  color: aqua;
+}
+.subtitle {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.subtitle:hover {
+  color: aqua;
+}
+.sub-subtitle {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.sub-subtitle:hover {
+  color: aqua;
+  font-size: 2.3rem;
+}
+.paragraph {
+  font-size: 1rem;
+}
+.paragraph:hover {
+  color: aqua;
+  font-size: 1.1rem;
+}
+/*  */
+.section-one {
+  min-height: 100vh;
+  background: black;
+  color: rgb(219, 215, 215);
+}
+
+.width-desktop {
+  min-height: 100vh;
+  padding: 55px 32px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+@media (min-width: 960px) {
+  .width-desktop {
+    max-width: 960px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.section-one__container--img {
+  display: none;
+}
+@media (min-width: 960px) {
+  .section-one__container--img {
+    display: initial;
+  }
+}
+.section-one__img {
+  width: 300px;
+}
+
+.section-one__container {
+  max-width: 312px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-two {
+  padding: 64px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+.section-two__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 262px;
+  text-align: center;
+  gap: 7px;
+}
+.section-two__container-services {
+  display: grid;
+  gap: 100px;
+}
+@media (min-width: 960px) {
+  .section-two__container-services {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 960px;
+  }
+}
+.services-img {
+  width: 128px;
+}

@@ -1,0 +1,85 @@
+<!-- Yo soy el HOME, necesito las secciones
+Bienvenida, Presentación, Mis servicios, Formulario de contacto -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+    <link rel="stylesheet" href="./components/header.css" />
+    <link rel="stylesheet" href="./components/form.css" />
+    <link rel="stylesheet" href="./components/footer.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <script defer src="./components/header.js"></script>
+    <script defer src="./pages/index-content-management/bienvenida.js"></script>
+    <script
+      defer
+      src="./pages/index-content-management/presentacion.js"
+    ></script>
+    <script defer src="./components/form.js"></script>
+    <script defer src="./components/footer.js"></script>
+    <script defer src="./pages/index.js"></script>
+  </head>
+  <body>
+    <div class="principal-content">
+      <!-- header -->
+      <div class="header-container"></div>
+      <div class="principal-content__titles-container"></div>
+    </div>
+    <!-- Chequear y maquetar de nuevo esta zona, pero con un div dentro del div para dar un width maximo al contenido, pero que el contenedor section one ocupe toda la pantalla -->
+    <section class="section-one">
+      <div class="width-desktop">
+        <div class="section-one__container--img">
+          <img class="section-one__img" src="./imgs/presentacion-img.png" />
+        </div>
+        <div class="section-one__container"></div>
+      </div>
+    </section>
+    <section class="section-two">
+      <div class="section-two__container">
+        <h2 class="subtitle">Mis servicios</h2>
+      </div>
+      <div class="section-two__container-services">
+        <div class="section-two__container">
+          <img class="services-img" src="./imgs/computer.png" />
+          <h3 class="sub-subtitle">Hago cosas</h3>
+          <p class="paragraph">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+            vehicula velit. Aenean lobortis posuere tristique.
+          </p>
+        </div>
+        <div class="section-two__container">
+          <img class="services-img" src="./imgs/computer.png" />
+          <h3 class="sub-subtitle">Y más cosas</h3>
+          <p class="paragraph">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+            vehicula velit. Aenean lobortis posuere tristique.
+          </p>
+        </div>
+        <div class="section-two__container">
+          <img class="services-img" src="./imgs/computer.png" />
+          <h3 class="sub-subtitle">Y también otras cosas</h3>
+          <p class="paragraph">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+            vehicula velit. Aenean lobortis posuere tristique.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- formulario -->
+    <div class="form-container"></div>
+    <!-- footer -->
+    <div class="footer-container"></div>
+  </body>
+</html>
