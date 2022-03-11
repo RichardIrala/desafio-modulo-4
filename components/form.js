@@ -9,15 +9,15 @@ function addForm() {
 <div class="form__label-container">
  <label class="form__label">
    <span>NOMBRE</span>
-   <input class="form__label__input" type="text" />
+   <input id="form-nombre" class="form__label__input" type="text" />
  </label>
  <label class="form__label">
    <span>EMAIL</span>
-   <input class="form__label__input" type="email" />
+   <input id="form-email" class="form__label__input" type="email" />
  </label>
  <label class="form__label">
    <span>Mensaje</span>
-   <textarea class="form__label__textarea" rows="3"></textarea>
+   <textarea id="form-mensaje" class="form__label__textarea" rows="3"></textarea>
  </label>
  <div>
    <button class="form__button">Enviar</button>
@@ -25,4 +25,19 @@ function addForm() {
 </div>
     `;
   formContainerEl.appendChild(newEl);
+  //
+  newEl.addEventListener("submit", (evento) => {
+    evento.preventDefault();
+    const mensaje = {
+      to: "richardirala47@hotmail.com",
+      message: "Desafio del módulo 4",
+    };
+    fetch("https://apx-api.vercel.app/api/utils/dwf", {
+      method: "POST",
+      body: JSON.stringify(mensaje),
+      headers: { "content-type": "application/json" },
+    }).catch((error) => {
+      console.log(error);
+    });
+  });
 }
