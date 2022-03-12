@@ -48,5 +48,9 @@ function addForm() {
     }).catch((error) => {
       console.log(error);
     });
+    evento.target["form-nombre"].value = "";
+    evento.target["form-email"].value = "";
+    evento.target["form-mensaje"].value = "";
+    alert("¡Mensaje enviado con exito!");
   });
 }
