@@ -28,9 +28,18 @@ function addForm() {
   //
   newEl.addEventListener("submit", (evento) => {
     evento.preventDefault();
+    evento.target["form-mensaje"].value;
     const mensaje = {
       to: "richardirala47@hotmail.com",
-      message: "Desafio del módulo 4",
+      message:
+        "Soy: " +
+        evento.target["form-nombre"].value +
+        "." +
+        " Mi email es: " +
+        evento.target["form-email"].value +
+        "." +
+        " Te quiero comunicar lo siguiente: " +
+        evento.target["form-mensaje"].value,
     };
     fetch("https://apx-api.vercel.app/api/utils/dwf", {
       method: "POST",
